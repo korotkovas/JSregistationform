@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+	 <div class="container">
+            <h1 class="text-center">Registration form</h1>
+            <hr>
+
+            <form action="index.html" method="post" name="registrationForm">
+                <div class="row">
+                    <label class="divLabel"for="userUsername">Username</label>
+                    <input class="divInput" id="userUsername" type="text" name="userUsername" placeholder="required, 5-12 characters">
+                </div>
+
+                <div class="row">
+                    <label class="divLabel"for="userPassword">Password</label>
+                    <input class="divInput" id="userPassword" type="text" name="userPassword" placeholder="required, 5-12 characters"></input>
+                </div>
+
+                <div class="row">
+                    <label class="divLabel"for="userName">Name</label>
+                    <input class="divInput" id="userName" type="text" name="userName" placeholder="required, letters only"></input>
+                </div>
+
+                <div class="row">
+                    <label class="divLabel"for="userAdress">Address</label>
+                    <input class="divInput" id="userAdress" type="text" name="userAdress" placeholder="optional"></input>
+                </div>
+
+                <div class="row">
+                    <label class="divLabel"for="userCountry">Country</label>
+                    <select class="divInput" id="userCountry">
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="Lithuania">Lithuanian</option>
+                        <option value="Spain">Spanish</option>
+                        <option value="Russia">Russian</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label class="divLabel" for="userZip">ZIP code</label>
+                    <input class="divInput" id="userZip" type="text" name="userZip" placeholder="required, numbers only"></input>
+                </div>
+
+                <div class="row">
+                    <label class="divLabel"for="userEmail">Email</label>
+                    <input class="divInput" id="userEmail" type="text" name="userEmail" placeholder="required, valit email only"></input>
+                </div>
+
+                <div class="row">
+                    <label class="divLabel">Gender</label>
+                    <div id="genderDiv" class="divInput">
+                        <input id="genderMale" type="radio" name="userGender" value="male">
+                        <label for="genderMale">Male</label>
+                        <input id="genderFemale" type="radio" name="userGender" value="female">
+                        <label for="genderFemale">Female</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="divLabel">Language</label>
+                    <div id="languageDiv" class="divInput">
+                        <input id="langEng" type="checkbox" name="langEng" value="english">
+                        <label for="langEng">English</label>
+                        <input id="langOther" type="checkbox" name="langOther" value="other">
+                        <label for="langOther">Other</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="divLabel">
+                        <label for="userComments">About</label>
+                    </div>
+                    <div class="divInput">
+                        <textarea id="userComments" name="userComments" rows="8" placeholder="Optional"></textarea>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                <input id="submitBtn" type="button" value="Submit" onclick="validate();">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+</body>
+</html>
